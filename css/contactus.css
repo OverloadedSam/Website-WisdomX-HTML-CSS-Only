@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Follow us section */
+.followus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.followus h1 {
+  font-size: 2.5rem;
+  color: rgb(196, 45, 3);
+  text-shadow: 2px 2px 3px black;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.followus .cont img {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  padding: 10px;
+  /* border-radius: 50px; */
+}
+
+/* Contact us Input */
+
+.contactus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactus h1 {
+  font-size: 2.5rem;
+  color: rgb(196, 45, 3);
+  text-shadow: 2px 2px 3px black;
+}
+
+.contactus #my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#my-form input {
+  margin: 10px;
+  padding: 10px;
+  width: 285px;
+  border: 2px solid rgb(196, 45, 3);
+  border-radius: 20px;
+}
+
+#my-form textarea {
+  margin: 10px;
+  padding: 10px;
+  width: 285px;
+  height: 220px;
+  border: 2px solid rgb(196, 45, 3);
+  border-radius: 20px;
+}
+.contactus .btn {
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  background-color: rgb(196, 45, 3);
+  height: 35px;
+  width: 135px;
+}

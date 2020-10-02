@@ -1,12 +1,22 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Philosopher:wght@400;700&family=Ubuntu:wght@300&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* color: white; */
   /* color: rgb(240, 244, 255); */
+  font-family: "Baloo Bhai 2", cursive;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-family: "Rokkitt", serif;
 }
 
 /* Navigation bar  */
- 
+
 #navbar {
   display: flex;
   /* flex-wrap: wrap; */
@@ -17,80 +27,218 @@
   top: 0;
 }
 
-.logo{
+.logo {
   display: flex;
 }
 
-.logo img{
+.logo img {
   height: 75px;
   width: 75px;
   border-radius: 100px;
   margin: 10px;
 }
 
-.logo h3{
-  margin: 20px 38px;
+.logo h2 {
+  margin: 16px 38px;
   color: aliceblue;
+  font-family: "Philosopher", sans-serif;
 }
 
-ul{
+ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-ul li{
+ul li {
   margin: 0px 24px;
   padding: 5px 15px;
-
 }
-ul li a{
+ul li a {
   padding: 8px 8px;
   text-decoration: none;
   color: aliceblue;
-
 }
 
 /* Welcome section */
-.welcome-section::before{
+.welcome-section::before {
   content: "";
   position: absolute;
-  background: url('../img/bg.jpg') no-repeat center center/cover;
-  width: 100%;
-  height: 100%;
+  background: url("../img/bg.jpg") no-repeat center center/cover;
   z-index: -1;
   height: 100vh;
   width: 100%;
   opacity: 0.8;
-
 }
 
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  /* border: 2px solid green; */
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 105px;
+  padding: 50px 75px;
+  border: 5px dashed rgb(196, 45, 3);
+  border-radius: 50px;
+}
+
+/* 
 #welcome{
   display: flex;
   flex-direction: column;
-  /* border: 2px solid red; */
+  border: 2px solid red; comment this
   height: 400px;
   color: aliceblue;
   justify-content: center;
   align-items: center;
-}
-#welcome h1{
-  margin: 10px 10px;
-  margin-top: 200px;
+} */
+#welcome h1 {
   padding: 15px;
   font-size: 2.8rem;
-  text-shadow: 3px 3px 10px black ;
+  text-shadow: 3px 3px 10px black;
   word-spacing: 10px;
 }
 
-#welcome p{
+#welcome p {
   margin: 18px;
   padding: 28px 70px;
-  text-shadow: 3px 3px 5px black ;
+  text-shadow: 3px 3px 5px black;
   font-size: 1.3rem;
   text-align: center;
   word-spacing: 10px;
+}
+
+/* why choose us */
+
+.h-choose {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(196, 45, 3);
+  text-shadow: 2px 2px 3px black;
+}
+
+#choose-us {
+  display: flex;
+  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-card {
+  margin: 30px 100px;
+  /* padding: 20px 20px; */
+  width: 350px;
+  height: 120px;
+  box-shadow: 2px 2px 15px black, -2px -2px 15px black;
+  border-radius: 15px;
+}
+
+table,
+th,
+td {
+  /* border: 1px solid green; */
+  border-collapse: collapse;
+}
+
+table h3 {
+  color: rgb(196, 45, 3);
+}
+
+table img {
+  height: 90px;
+  width: 90px;
+}
+
+/* footer info */
+footer {
+  margin-top: 50px;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+#foot-cont-1,
+#foot-cont-2,
+#foot-cont-3 {
+  margin: 20px;
+  padding: 20px;
+}
+
+#foot-cont-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#foot-cont-1 div h3 {
+  margin: 25px 5px;
+}
+#foot-cont-1 h2 {
+  font-family: "Philosopher", sans-serif;
+  color: rgb(196, 45, 3);
+  font-size: 1.5rem;
+}
+
+#foot-cont-1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 50px;
+  text-align: center;
+}
+
+#foot-cont-2 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+}
+#foot-cont-2 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#foot-cont-3 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+#foot-cont-3 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+}
+
+.foot span {
+  font-family: "Philosopher", sans-serif;
+  margin: 1px 200px;
 }
 
 /* Utility classes */
@@ -102,4 +250,5 @@ ul li a{
   width: 99px;
   padding: 3px 8px;
   border: 2px solid black;
+  cursor: pointer;
 }
