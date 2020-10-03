@@ -1,3 +1,4 @@
+@import "utils.css";
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +7,16 @@
 body {
   background-color: #f7f7f7;
 }
+
 body .services {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: var(--secondary-heading);
+  font-family: var(--heading-font);
   margin-top: 40px;
-  color: rgb(196, 45, 3);
+  color: var(--primary-color);
   text-shadow: 2px 2px 3px black;
 }
+
 .cont {
   display: flex;
   flex-direction: row;
@@ -22,7 +26,7 @@ body .services {
 }
 
 .cont .card {
-  height: 350px;
+  height: 406px;
   width: 300px;
   margin: 50px 150px;
   padding: 20px;
@@ -41,8 +45,8 @@ body .services {
   width: 100px;
 }
 .cont .card h5 {
-  color: rgb(196, 45, 3);
-  font-size: 18px;
+  color: var(--primary-color);
+  font-size: var(--insider-heading);
   padding: 10px;
 }
 
@@ -51,10 +55,9 @@ body .services {
 }
 
 .cont .card .btn {
-  height: 40px;
-  width: 135px;
-  background-color: rgb(196, 45, 3);
-  color: white;
+  width: 140px;
+  font-size: 16px;
+  border-radius: 20px;
 }
 
 /* Pricing plans */
@@ -62,8 +65,9 @@ body .services {
 #price-heading {
   text-align: center;
   margin: 28px;
-  font-size: 2.5rem;
-  color: rgb(196, 45, 3);
+  font-size: var(--secondary-heading);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
   text-shadow: 2px 2px 3px black;
 }
 
@@ -99,12 +103,10 @@ body .services {
 }
 
 .pricecard h2 {
-  color: rgb(196, 45, 3);
+  color: var(--primary-color);
 }
 
 .pricecard .btn {
-  height: 40px;
-  width: 135px;
-  background-color: rgb(196, 45, 3);
-  color: white;
+  width: 140px;
+  border-radius: 20px;
 }

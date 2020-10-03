@@ -1,3 +1,4 @@
+@import "utils.css";
 * {
   margin: 0;
   padding: 0;
@@ -32,19 +33,23 @@
 }
 .headcourse {
   text-align: center;
-  color: rgb(196, 45, 3);
+  color: var(--primary-color);
   margin-top: 40px;
-  font-size: 2.5rem;
+  font-size: var(--secondary-heading);
+  font-family: var(--heading-font);
   text-shadow: 2px 2px 3px black;
 }
 .courses h3 {
   margin: 20px;
-  color: rgb(196, 45, 3);
+  color: var(--primary-color);
+  font-size: var(--insider-heading);
   font-weight: 900;
 }
 
 .courses .btn {
-  background-color: rgb(196, 45, 3);
-  color: aliceblue;
-  border: 2px solid aliceblue;
+  width: 120px;
+  font-size: 16px;
+  border-radius: 20px;
 }
+
+

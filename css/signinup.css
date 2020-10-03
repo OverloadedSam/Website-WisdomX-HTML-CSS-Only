@@ -1,3 +1,4 @@
+@import "utils.css";
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(196, 45, 3);
+  border: 2px solid var(--primary-color);
   border-radius: 20px;
   margin: 80px auto;
 }
@@ -20,8 +21,9 @@
 #signin img {
   height: 100px;
   width: 100px;
+  border: 2px solid var(--primary-color);
   border-radius: 80px;
-  border: 3px dashed brown;
+  border: 3var (--primary-color);
   position: relative;
   top: -50px;
 }
@@ -32,7 +34,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: -333;
+  /* z-index: -333; */
+}
+
+#signin h2 {
+  color: var(--primary-color);
 }
 
 #signin form input {
@@ -41,17 +47,10 @@
   padding: 10px;
 }
 
-#signin .btn {
-  height: 40px;
-  width: 135px;
-  background-color: rgb(196, 45, 3);
-  color: white;
-}
-
 /* sign up page */
 
 #signup h2 {
-  color: rgb(196, 45, 3);
+  color: var(--primary-color);
   margin-top: 20px;
 }
 
@@ -62,7 +61,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(196, 45, 3);
+  border: 2px solid var(--primary-color);
   border-radius: 20px;
   margin: 80px auto;
 }
@@ -73,7 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: -333;
+  /* z-index: -333; */
 }
 
 #signup form input {
@@ -82,9 +81,9 @@
   margin-bottom: 20px;
 }
 
-#signup .btn {
+#signup .btn,
+#signin .btn {
+  border-radius: 20px;
+  width: 140px;
   height: 40px;
-  width: 135px;
-  background-color: rgb(196, 45, 3);
-  color: white;
 }
